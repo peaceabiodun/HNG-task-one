@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const updateTime=()=> {
-        const utcString = Date.now();
+        const timeNow = `${new Date().getUTCHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`
 
-        currentUTCTime.textContent = utcString;
+        currentUTCTime.textContent = timeNow;
     };
 
     updateTime(); 
